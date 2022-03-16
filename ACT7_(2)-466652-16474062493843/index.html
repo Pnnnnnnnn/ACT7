@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 id="app-name">ฝากซื้อด้วย</h1>
+	<h2 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h2>
+	<h3 class="section-subtitle">(ชื่อคนในกลุ่มที่มาร่วมทำวันนี้)</h3>
+	<ul id="member-list">
+		<li>ณพรรฒ ลิมสัมพันธ์เจริญ</li>
+		<li>ศุภกร กานต์ธีรดา</li>
+		<li>ภูมิพัฒน์ ชัยประเสริฐสุด</li>
+	</ul>
+	<h2 class="section-title">รายการฝากซื้อ</h2>
+	<table id="main-table">
+		<thead>
+			<th>ของที่ฝากซื้อ</th>
+			<th>ชื่อผู้ฝากซื้อ</th>
+			<th>ราคา (บาท)</th>
+			<th>ดำเนินการ</th>
+		</thead>
+		<tr id='row-0'>
+			<td><input type="text" id="item-to-add"> </td>
+                <td><select id="name-to-add">
+                    <option>--เลือกผู้ฝากซื้อ--</option>
+                    <option >ณพรรฒ ลิมสัมพันธ์เจริญ</option>
+                    <option >ศุภกร กานต์ธีรดา</option>
+                    <option >ภูมิพัฒน์ ชัยประเสริฐสุด</option>
+                </select></td>
+                <td><input type="text"  id="price-to-add"> </td>
+                <td><button id="add-newrow" onclick = 'addItem()'>เพิ่ม</button></td> 
+              </tr>
+          </table>
+          <script type="module" src=script.js></script>
+    </body>
+</html>
